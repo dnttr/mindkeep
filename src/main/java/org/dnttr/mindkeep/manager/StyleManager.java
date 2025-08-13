@@ -24,7 +24,7 @@ public final class StyleManager {
         this.style = new HashMap<>();
     }
 
-    public void load(final URL resource) throws IOException {
+    public void load(final URL resource) {
         var inputStream = new IHasInputStream() {
             @Override
             public @Nullable InputStream getInputStream() {
