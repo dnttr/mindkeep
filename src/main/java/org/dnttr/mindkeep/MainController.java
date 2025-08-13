@@ -13,7 +13,13 @@ public class MainController {
     public Button testButton;
 
     @FXML
+    private void initialize() {
+
+    }
+
+    @FXML
     private void handleButtonClick() {
         System.out.println("Click");
+
     }
 }
