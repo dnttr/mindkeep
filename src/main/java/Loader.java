@@ -17,6 +17,7 @@ public class Loader extends Application {
         var fxml = new FXMLLoader(Objects.requireNonNull(getClass().getResource("main-view.fxml")));
 
         Scene scene = new Scene(fxml.load(), 800, 600);
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("main-theme.css")).toExternalForm());
 
         stage.setTitle("App");
         stage.setScene(scene);
