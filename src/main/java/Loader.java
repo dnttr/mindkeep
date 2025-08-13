@@ -1,6 +1,5 @@
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -15,7 +14,7 @@ public class Loader extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        var fxml = new FXMLLoader(Objects.requireNonNull(getClass().getResource("main.fxml")));
+        var fxml = new FXMLLoader(Objects.requireNonNull(getClass().getResource("main-view.fxml")));
 
         Scene scene = new Scene(fxml.load(), 800, 600);
 
