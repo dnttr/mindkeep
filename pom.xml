@@ -74,5 +74,10 @@
             <artifactId>flexmark-all</artifactId>
             <version>0.64.8</version>
         </dependency>
+        <dependency>
+            <groupId>com.helger</groupId>
+            <artifactId>ph-css</artifactId>
+            <version>6.4.1</version>
+        </dependency>
     </dependencies>
 </project>
