@@ -1,6 +1,5 @@
 package org.dnttr.mindkeep.utils;
 
-import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.paint.Color;
 import org.jetbrains.annotations.NotNull;

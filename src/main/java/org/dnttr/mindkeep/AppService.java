@@ -5,8 +5,7 @@ import lombok.Getter;
 import org.dnttr.mindkeep.manager.ResourceManager;
 import org.dnttr.mindkeep.manager.StyleManager;
 
-import java.net.URL;
-
+@Getter
 public final class AppService {
 
     private final StyleManager styleManager = new StyleManager();
@@ -20,6 +19,8 @@ public final class AppService {
             throw new IllegalStateException("Application already running.");
         }
 
+        instance = this;
+
         this.resourceManager.load();
 
         var mainTheme = this.resourceManager.getAsURL("main-theme");
@@ -27,8 +28,6 @@ public final class AppService {
 
         final Scene scene = new Scene(this.resourceManager.getAsFXML("main-view"), 800, 600);
         scene.getStylesheets().add(mainTheme.toExternalForm());
-
-        instance = this;
 
         return scene;
     }
