@@ -13,7 +13,7 @@
     -fx-mark-highlight-color: #ffeb3b;
 
     -mindkeep-primary: #4285f4;
-    -mindkeep-primary-fill: #5995f8;
+    -mindkeep-primary-fill: #e4eeff;
     -mindkeep-secondary: #34a853;
     -mindkeep-accent: #fbbc04;
     -mindkeep-warning: #ea4335;
@@ -112,8 +112,8 @@
     -fx-font-size: 14px;
     -fx-alignment: center-left;
     -fx-padding: 12 16;
-    -fx-background-radius: 8;
-    -fx-border-radius: 8;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
     -fx-cursor: hand;
     -fx-effect: null;
 }
@@ -262,20 +262,10 @@
     -fx-font-size: 14px;
     -fx-font-weight: 600;
     -fx-padding: 12 24;
-    -fx-background-radius: 8;
-    -fx-border-radius: 8;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
     -fx-cursor: hand;
     -fx-effect: dropshadow(gaussian, -mindkeep-shadow, 6, 0.2, 0, 2);
-}
-
-.btn-primary:hover {
-    -fx-background-color: derive(-mindkeep-primary, -10%);
-    -fx-effect: dropshadow(gaussian, -mindkeep-shadow, 8, 0.3, 0, 3);
-}
-
-.btn-primary:pressed {
-    -fx-background-color: derive(-mindkeep-primary, -20%);
-    -fx-translate-y: 1;
 }
 
 .btn-secondary {
@@ -287,8 +277,8 @@
     -fx-font-size: 14px;
     -fx-font-weight: 500;
     -fx-padding: 12 24;
-    -fx-background-radius: 8;
-    -fx-border-radius: 8;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
     -fx-cursor: hand;
 }
 
@@ -315,8 +305,8 @@
     -fx-background-color: -mindkeep-surface;
     -fx-border-color: -mindkeep-outline;
     -fx-border-width: 1;
-    -fx-border-radius: 8;
-    -fx-background-radius: 8;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
     -fx-padding: 16;
     -fx-text-fill: -mindkeep-text-primary;
     -fx-font-family: "Consolas", "Monaco", "Courier New", monospace;
@@ -333,8 +323,8 @@
     -fx-background-color: -mindkeep-surface;
     -fx-border-color: -mindkeep-outline;
     -fx-border-width: 1;
-    -fx-border-radius: 8;
-    -fx-background-radius: 8;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
     -fx-padding: 0;
 }
 
@@ -351,8 +341,8 @@
     -fx-background-color: -mindkeep-surface;
     -fx-border-color: -mindkeep-outline;
     -fx-border-width: 1;
-    -fx-border-radius: 8;
-    -fx-background-radius: 8;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
 }
 
 .list-cell {
@@ -410,8 +400,8 @@
 
 .scroll-bar .thumb {
     -fx-background-color: -mindkeep-outline;
-    -fx-background-radius: 8;
-    -fx-border-radius: 8;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
 }
 
 .scroll-bar .thumb:hover {

@@ -1,8 +1,9 @@
 package org.dnttr.mindkeep.controllers;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+
+import org.dnttr.mindkeep.components.RippleButton;
 
 public class MainController {
 
@@ -10,16 +11,14 @@ public class MainController {
     private AnchorPane pane;
 
     @FXML
-    public Button testButton;
+    public RippleButton button;
 
     @FXML
     private void initialize() {
-
     }
 
     @FXML
     private void handleButtonClick() {
         System.out.println("Click");
-
     }
 }
