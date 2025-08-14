@@ -3,7 +3,6 @@ package org.dnttr.mindkeep.components;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
-import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.input.MouseEvent;
@@ -14,6 +13,7 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 import org.dnttr.mindkeep.AppService;
+import org.jetbrains.annotations.NotNull;
 
 public class RippleButton extends Button {
 
@@ -28,7 +28,7 @@ public class RippleButton extends Button {
         this.setOnMousePressed(this::createEffect);
     }
 
-    private void createEffect(MouseEvent event) {
+    private void createEffect(@NotNull MouseEvent event) {
         double arc = 0;
 
         var parent = (AnchorPane) getParent();
@@ -37,8 +37,8 @@ public class RippleButton extends Button {
 
         overlay.setMouseTransparent(true);
 
-        overlay.layoutXProperty().bind(this.layoutXProperty());
-        overlay.layoutYProperty().bind(this.layoutYProperty());
+        overlay.translateXProperty().bind(this.layoutXProperty());
+        overlay.translateYProperty().bind(this.layoutYProperty());
 
         overlay.prefWidthProperty().bind(this.widthProperty());
         overlay.prefHeightProperty().bind(this.heightProperty());

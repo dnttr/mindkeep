@@ -40,11 +40,12 @@
     -fx-mark-color: #3c4043;
     -fx-mark-highlight-color: #fdd663;
 
-    -mindkeep-primary: #8ab4f8;
-    -mindkeep-secondary: #81c995;
-    -mindkeep-accent: #fdd663;
-    -mindkeep-warning: #f28b82;
-    -mindkeep-surface: #1f1f1f;
+    -mindkeep-primary: #4285f4;
+    -mindkeep-primary-fill: #e4eeff;
+    -mindkeep-secondary: #34a853;
+    -mindkeep-accent: #fbbc04;
+    -mindkeep-warning: #ea4335;
+    -mindkeep-surface: #ffffff;
     -mindkeep-surface-variant: #2d2d30;
     -mindkeep-outline: #5f6368;
     -mindkeep-shadow: rgba(0, 0, 0, 0.5);

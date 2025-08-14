@@ -1,5 +1,6 @@
 package org.dnttr.mindkeep;
 
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import lombok.Getter;
 import org.dnttr.mindkeep.manager.ResourceManager;
@@ -27,6 +28,8 @@ public final class AppService {
         this.styleManager.load(mainTheme);
 
         final Scene scene = new Scene(this.resourceManager.getAsFXML("main-view"), 800, 600);
+        Parent root = scene.getRoot();
+
         scene.getStylesheets().add(mainTheme.toExternalForm());
 
         return scene;
